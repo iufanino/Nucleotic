@@ -1,0 +1,359 @@
+/*URL pour la police*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.button{ 
+    color: #FFFFFF;
+    background-color: #d95972;
+    border: 0;
+    line-height: 2.5;
+    border-radius: 15px;
+    padding: 0 8px;
+    width: 15%;
+    margin-left: 43%;
+}   
+.logo{
+    width: 15%;
+    margin: 10px 10px 0 50px;
+}
+
+/*Première section*/
+
+#section1{
+    background: linear-gradient(to top,  #001f2b,  #033549, #064d6b);
+}
+#logo1{ 
+    margin:2% auto 3% auto;
+}
+#section1 h2{ 
+    color:#FFFFFF;
+}
+#section1 h2:nth-child(3){
+    color:#00A6A6;
+}
+
+/*Deuxième section*/
+
+#section2{
+    background-color: #e0ded6;
+}
+
+/*En tête de deuxième section*/
+
+#section2 h2{
+    color: #4F4e4e;
+} 
+#section2 p{
+    color: #00a8b4; 
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+/*La partie centrale de deuxième section*/
+
+#idcentre{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#gauche, #droite{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+}
+#gauche h3, #droite h3{
+    color: #00a8b4;
+}
+#gauche p, #droite p{
+    color: #4F4e4e;
+    margin-bottom: 5%;
+}
+#droite{ 
+    text-align: left;
+}
+#gauche{
+    text-align: right;
+    padding-top: 2%;
+}
+
+/*Les images et un button de deuxième section */
+
+#centre{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 2% 6%;
+}
+#centre img:nth-child(1){ 
+    position: relative;
+    z-index: 0;
+    width: 78%;
+    padding: 5% 0 0 6%;
+}
+#centre img:nth-child(2){
+    position: absolute;
+    z-index: 1;
+    width: 26%;
+    padding-left: 2%;
+}
+#centre img:nth-child(3){ 
+    position: absolute;
+    z-index: 2;
+    width: 6%;
+    padding-top: 12%;
+}
+#centre button:nth-child(4){ 
+    background-color: #d95972;
+    color: #FFFFFF;
+    text-align: center;
+    z-index: 3;
+    border: 0;
+    line-height: 1.3;
+    border-radius: 10px;
+    padding: 0 18px;
+    width: 24%;
+    margin-left: 30%;
+}
+
+/*Troisième section*/
+
+#section3{
+    background-color: #dd8f16;
+    margin-top: 15px;
+}
+
+/*Tableau*/
+
+table{
+    color: #4F4e4e;
+    border-collapse: collapse;
+    position: absolute;
+    width: 60%;
+    left: 17%;
+    font-size: 0.8em;
+    margin-left: 12%;
+}
+
+/*Titre de tableau*/
+
+caption{
+    color: #FFFFFF;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+/*Entête de tableau*/
+
+.imagetableau{
+    background-size: cover;
+    background-image: url("nucleotic/features-header.png");
+    border-left: 12px  solid #dd8f16 ;
+    height: 90px;
+    width: 10px;
+    text-align: center;
+}
+
+/*Le corp de tableau*/
+
+th{
+    text-align: left;
+    padding-left: 2%;
+    width: 40%;
+}
+td{
+    text-align: center;
+    padding: 10px;
+    border-left: 12px  solid #dd8f16;
+}
+td i{
+    font-size: x-small;
+}
+
+/*Les buttons de tableau*/
+
+tfoot button{
+    color: #FFFFFF; 
+    line-height: 1.8;
+    border-radius: 10px;
+    padding: 0 20px;
+    border: 0;
+}
+#button1{
+    background-color: #4fc3f1; 
+}
+#button2{
+    background-color: #00a7a9; 
+}
+#button3{
+    background-color: #d95972; 
+}
+
+/*Les couleurs de tableau*/
+
+table>tbody>tr:nth-child(2n+1)>th{
+    background-color: #FFFFFF;
+}
+table>tbody>tr:nth-child(2n)>th{
+    background-color: #F0F0F0;
+}
+table>tbody>tr:nth-child(2n+1)>td:nth-child(2){
+    background-color:#a7e1f8;
+}
+table>tbody>tr:nth-child(2n){
+    background-color:#d3f0fb;
+}
+table>tbody>tr:nth-child(2n+1)>td:nth-child(3) {
+    background-color:#7fd3d4;
+}
+table>tbody>tr:nth-child(2n)>td:nth-child(3){
+    background-color:#bfe9e9;
+}
+table>tbody>tr:nth-child(2n+1)>td:nth-child(4){
+    background-color:#ecacb8;
+}
+table>tbody>tr:nth-child(2n)>td:nth-child(4){
+    background-color: #f5d5dc;
+}
+ 
+/*Pied de tableau*/
+
+tfoot>tr>td{
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 10px;
+}
+
+/*Quatrième section*/
+
+#section4{
+    background: linear-gradient(to bottom, #583180,  #773273, #953366);
+    color: white;
+}
+.texte{
+    font-size: 17px;
+    padding-top: 70px ;
+    letter-spacing: 1px;
+}
+.images{
+    height: 85px;
+    width: 85px;
+    padding: 20px;
+    margin: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+#violet{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 68%;
+    margin-left: 15%;
+}
+#section4 i{
+    font-size: 3.2em;
+    margin: 20px;
+}
+
+/*Cinquième section*/
+
+#section5{
+    width: 100%;
+    background-color: #e3e2dd;
+    color: #4d4947; 
+    display:flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: bolder;
+}
+#section5 h2{
+    color: #d95972; 
+    margin: 50px 0 30px 0;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+#section5 img{
+    margin-top: 40px;
+}
+#section5 p{
+    margin: 40px 0;
+    line-height: 2;
+}
+#section5 b{
+   color: rgb(32, 32, 32);
+}
+
+/*Cotê gauche de cinquième section*/
+
+#cotegauche{
+    position: relative;
+    text-align: right;
+    width: 45%;
+    padding-left: 20px;
+}
+
+/*Cotê drtoite de cinquième section*/
+
+#cotedroite{
+    width: 45%;
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*Ligne rouge verticale */
+
+#verticale{
+    border-left:2px solid #c00000;
+}
+
+/*Ligne horisontale*/
+
+hr{
+  border: 1px solid #bfcf31;
+}
+
+/*Dernier section*/
+
+footer{
+    background: linear-gradient(to bottom,  #d9eb39, #bfcf31, #a9b829);
+    color: #FFFFFF;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2%;
+}
+footer img:nth-child(3){
+    width: 53%;
+    margin-left: 22%;
+}
+footer hr{
+    border: 1px solid white;
+    margin-left: 10%;
+    width: 80%;
+}
+
